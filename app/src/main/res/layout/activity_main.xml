@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="12dp"
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp"
+    android:paddingRight="12dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/label_radius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="12dp"
+        android:textSize="32sp"
+        android:text="@string/label_radius" />
+
+    <EditText
+        android:id="@+id/numbered_radius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/label_radius"
+        android:layout_alignBottom="@+id/label_radius"
+        android:layout_alignParentRight="true"
+        android:textSize="20sp"
+        android:hint="@string/numbered_radius"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/numbered_radius"
+        android:textSize="20sp"
+        android:background="@color/colorPrimary"
+        android:text="Calcuate Volume"
+        android:onClick="calcuate"/>
+
+    <TextView
+        android:id="@+id/Result"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/button"
+        android:layout_alignLeft="@id/label_radius"
+        android:layout_alignRight="@id/label_radius"
+        android:textSize="32sp"
+        android:text="@string/label_result"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" />
+
+    <TextView
+        android:id="@+id/TrueResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/Result"
+        android:layout_alignBottom="@id/Result"
+        android:layout_alignRight="@id/label_radius"
+        android:textSize="32sp" />
+
+</RelativeLayout>

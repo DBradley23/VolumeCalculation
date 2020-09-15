@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Volume Calculation</string>
+
+    <string name="label_radius">Radius:</string>
+    <string name="label_result">Result:</string>
+    <string name="numbered_radius">Enter Radius</string>
+
+    <string name="button_calculate">CALCULATE</string>
+</resources>
